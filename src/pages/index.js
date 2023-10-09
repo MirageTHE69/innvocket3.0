@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import ScrollMagic from "scrollmagic";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
