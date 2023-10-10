@@ -18,11 +18,18 @@
 }
 
 .moon-pruple-gradient {
-  background: #4e54c8;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #8f94fb,
+    #4e54c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #8f94fb,
+    #4e54c8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
 
 body {
   overflow: hidden;
@@ -78,38 +85,203 @@ html {
   animation-fill-mode: forwards;
 }
 
-.delay-1 { animation-delay: 0.1s; }
+.delay-1 {
+  animation-delay: 0.1s;
+}
 /* ... (no changes for other delays) */
-.delay-10 { animation-delay: 1s; } /* Fixed typo: 0.10s to 1s */
+.delay-10 {
+  animation-delay: 1s;
+} /* Fixed typo: 0.10s to 1s */
 
-.delay-1 { animation-delay: 0.1s; }
-.delay-2 { animation-delay: 0.2s; }
-.delay-3 { animation-delay: 0.3s; }
-.delay-4 { animation-delay: 0.4s; }
-.delay-5 { animation-delay: 0.5s; }
-.delay-6 { animation-delay: 0.6s; }
-.delay-7 { animation-delay: 0.7s; }
-.delay-8 { animation-delay: 0.8s; }
-.delay-9 { animation-delay: 0.9s; }
-.delay-10 { animation-delay: 0.10s; }
-
+.delay-1 {
+  animation-delay: 0.1s;
+}
+.delay-2 {
+  animation-delay: 0.2s;
+}
+.delay-3 {
+  animation-delay: 0.3s;
+}
+.delay-4 {
+  animation-delay: 0.4s;
+}
+.delay-5 {
+  animation-delay: 0.5s;
+}
+.delay-6 {
+  animation-delay: 0.6s;
+}
+.delay-7 {
+  animation-delay: 0.7s;
+}
+.delay-8 {
+  animation-delay: 0.8s;
+}
+.delay-9 {
+  animation-delay: 0.9s;
+}
+.delay-10 {
+  animation-delay: 0.1s;
+}
 
 .nav-item {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .nav-item:hover {
- 
   color: white; /* Change this to white or your desired text color on hover */
 }
-
 
 .stack-item {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .stack-item:hover {
-  background-color:#24282c;
-
+  background-color: #24282c;
 }
 
+.nav-transition {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-open {
+  transform: translateY(0);
+}
+
+.nav-closed {
+  transform: translateY(-100%);
+}
+.slide-down-enter {
+  transform: translateY(-100%);
+}
+.slide-down-enter-active {
+  transform: translateY(0);
+  transition: transform 300ms ease-in-out;
+}
+.slide-down-exit {
+  transform: translateY(0);
+}
+.slide-down-exit-active {
+  transform: translateY(-100%);
+  transition: transform 300ms ease-in-out;
+}
+
+.navbar-transition-enter {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.navbar-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.navbar-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navbar-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #181c20;
+  z-index: 1000;
+}
+
+.menu-button {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1001;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* ... other styles ... */
+
+.top-bar {
+  position: fixed;
+  top: 1rem;
+  left: 50%; /* move the left edge to the center of the screen */
+  transform: translateX(-50%); /* shift it back left by half its width */
+  width: 92%;
+  box-sizing: border-box; /* include padding in element's total width and height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* shorthand for padding-top/bottom and padding-left/right */
+  background-color: #181c20;
+  z-index: 1001; /* ensure the top bar stays above other elements */
+}
+
+.mobile-navbar {
+  position: fixed;
+  top: 72px; /* height of the top bar */
+  left: 50%; /* centering - step 1 */
+  transform: translateX(-50%) scaleY(0); /* centering - step 2, initially hidden */
+  width: 92%; /* match the width of the top bar */
+  box-sizing: border-box; /* ensure padding is included in the width */
+  height: calc(100% - 72px); /* full height minus the top bar */
+  padding: 1rem 2rem; /* match the padding of the top bar */
+  background-color: #181c20;
+  transform-origin: top; /* expand from the top */
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000; /* beneath the top bar */
+}
+
+.mobile-navbar.open {
+  transform: translateX(-50%) scaleY(1); /* centering - step 2, fully visible */
+}
+
+/* ... other styles ... */
+
+.mobile-navbar.open .top-bar {
+  transform: translateY(calc(100% - 72px)); /* 72px is the height of top-bar */
+}
+
+/* ... rest of your CSS ... */
+
+.hamburger-icon {
+  width: 24px; /* Reduced from 30px to 24px */
+  height: 20px; /* Reduced from 25px to 20px */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.hamburger-icon .bar1,
+.hamburger-icon .bar2,
+.hamburger-icon .bar3 {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform-origin: center;
+}
+
+.hamburger-icon.open .bar1 {
+  transform: rotate(45deg) translateY(6px) translateX(3px); /* Adjusted translateX from 4px to 3px */
+}
+
+.hamburger-icon.open .bar2 {
+  opacity: 0;
+}
+
+.hamburger-icon.open .bar3 {
+  transform: rotate(-45deg) translateY(-6px) translateX(3px); /* Adjusted translateX from 4px to 3px */
+}

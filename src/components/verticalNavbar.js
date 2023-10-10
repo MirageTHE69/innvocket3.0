@@ -19,7 +19,7 @@ function VerticalNavbar() {
   return (
     <div
       id="verticalNavbar"
-      className="flex flex-col w-[23%] bg-[#111418] min-h-screen"
+      className="md:flex md:flex-col lg:flex lg:flex-col w-[23%] md:visible lg:visible hidden  bg-[#111418] min-h-screen"
     >
       <aside className="flex-grow bg-[#181c20] rounded-3xl pt-12 pl-12 mt-6 ml-5">
         <h1 className="font-leagueGothic mb-8 text-white text-[42px]">

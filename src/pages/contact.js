@@ -5,50 +5,99 @@ import HeaderSection from "../components/HeaderSection"
 import StackCard from "../components/stackCard"
 
 function Contact() {
-    return (
-        <Layout>
-          <HeaderSection title="HOME" subtext="Welcome to my personal website." />
-    
-          <div className="flex justify-between w-full p-6 space-y-3">
-          <div class="h-[58%] w-[60%] ">
-          <div class=" ">
-            <div class="p-10 text-4xl text-white">Send A Message</div>
-            <div class="flex w-full flex-row justify-around pl-5  pr-5">
-              <div class="h-16 w-[45%] rounded-xl bg-[#181c20]"></div>
+  return (
+    <Layout>
+      <HeaderSection
+        title="HOME"
+        subtext="Welcome to my personal website."
+        className={"slide-in-right-bounce delay-2"}
+      />
 
-              <div class="h-16 w-[45%] rounded-xl bg-[#181c20]"></div>
+      <div className=" flex flex-col  md:flex-col lg:flex-row   w-full p-6 space-y-3 md:space-y-0 md:space-x-3 items-start">
+        {" "}
+        {/* Adjusted flex classes */}
+        <div className="w-full md:w-[60%] contact-section flex-grow md:mr-4 pt-4">
+          <div>
+            <div className="text-3xl text-white font-leagueGothic mb-4">
+              Send A Message
             </div>
-            <div class="flex w-full flex-col justify-around pl-5 pr-5 mt-5 ml-4">
-              <div class=" h-72 w-[95%] rounded-xl bg-[#181c20]"></div>
-
-              <div class=" mt-3 h-14 w-[95%] rounded-xl bg-white"></div>
+            <div className="flex flex-col space-y-4">
+              <div className="flex flex-col md:flex-row justify-between space-y-4 md:space-y-0">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  className="h-15 w-full md:w-[48%] rounded-xl bg-[#181c20] text-white p-4"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="h-15 w-full md:w-[48%] rounded-xl bg-[#181c20] text-white p-4"
+                />
+              </div>
+              <textarea
+                placeholder="Message"
+                className="h-48 w-full rounded-xl bg-[#181c20] text-white p-4"
+              ></textarea>
+              <button className="h-14 w-full rounded-xl bg-white text-[#181c20] font-bold text-center">
+                Send Message
+              </button>
             </div>
           </div>
         </div>
-    
-            {/* Stack Cards */}
-            <div className="w-[40%] space-y-3 ">
-                <div className="flex justify-between items-center justify-items-center">
-                    <h2 className="font-leagueGothic text-3xl ml-3 text-white">STACK</h2>
-                    <button className="flex items-center text-white">
-                        <span className="transition-transform transform hover:translate-x-[-8px] text-[#bdc7d0] text-sm">
-                            View all
-                        </span>
-                        <svg className="ml-2 align-middle text-[#bdc7d0]" width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 10H15M15 10L10 15M15 10L10 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                    </button>
-                </div>
-    
-        <StackCard title="Stack Title 1" icon={""} className="slide-in-right delay-1" />
-      <StackCard title="Stack Title 2" icon={""} className="slide-in-right delay-2" />
-      <StackCard title="Stack Title 3" icon={""} className="slide-in-right delay-3" />
-      <StackCard title="Stack Title 4" icon={""} className="slide-in-right delay-4" />
-            </div>
+        {/* Stack Cards */}
+        <div className="w-full md:w-[40%] space-y-2 stack-section pt-1">
+          <div className="flex justify-between items-center justify-items-center mb-4">
+            <h2 className="font-leagueGothic text-3xl ml-3 text-white">
+              SOCIALS
+            </h2>
+            <button className="flex items-center text-white">
+              <span className="transition-transform transform hover:translate-x-[-8px] text-[#bdc7d0] text-sm">
+                View all
+              </span>
+              <svg
+                className="ml-2 align-middle text-[#bdc7d0]"
+                width="18"
+                height="18"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 10H15M15 10L10 15M15 10L10 5"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
           </div>
-    
-        </Layout>
-      );
+          <div className="flex flex-col gap-2">
+            <StackCard
+              title="Stack Title 1"
+              icon={""}
+              className="slide-in-right delay-1 "
+            />
+            <StackCard
+              title="Stack Title 2"
+              icon={""}
+              className="slide-in-right delay-2 "
+            />
+            <StackCard
+              title="Stack Title 3"
+              icon={""}
+              className="slide-in-right delay-3 "
+            />
+            <StackCard
+              title="Stack Title 4"
+              icon={""}
+              className="slide-in-right delay-4 "
+            />
+          </div>
+        </div>
+      </div>
+    </Layout>
+  )
 }
 
 export default Contact

@@ -10,7 +10,7 @@ const ExperiencePage = () => {
       <HeaderSection title="EXPERIENCE" subtext="Overview of my professional journey." />
 
 
-        <div className="grid  grid-cols-2 grid-rows-3 gap-4 w-full h-[50vh] md:h-[125vh] lg:h-[200vh] bg-[#101418] pt-2 pl-5 pr-5 pb-5">
+        <div className="grid  grid-cols-1 lg:grid-cols-2 lg:grid-row-3 md:grid-cols-2 md:grid-rows-3 gap-4 w-full h-[250vh] md:h-[125vh] lg:h-[200vh] bg-[#101418] pt-2 pl-5 pr-5 pb-5">
         
           {/* Card 1 */}
           <div className="rounded-3xl bg-[#181c20] p-4 text-white w-full h-full">
