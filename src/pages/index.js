@@ -106,7 +106,7 @@ const IndexPage = () => {
                   <img
                     src={project.imgUrls[project.imgUrls.length - 1]} // Add the appropriate image URL from your project data
                     alt={project.title}
-                    className="w-full h-full rounded-tl-3xl"
+                    className="w-full h-full rounded-tl-3xl object-cover"
                   />
                 </div>
               </Link>

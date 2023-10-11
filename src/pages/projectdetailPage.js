@@ -52,7 +52,7 @@ const ProjectDetailPage = ({ pageContext }) => {
                   src={project?.imgUrls[2]}
                   // Access the first image URL
                   alt={project?.title}
-                  className=" w-full h-full"
+                  className=" w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -77,7 +77,7 @@ const ProjectDetailPage = ({ pageContext }) => {
                   src={project?.imgUrls[1]}
                   // Access the first image URL
                   alt={project?.title}
-                  className=" w-full h-full"
+                  className=" w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -100,7 +100,7 @@ const ProjectDetailPage = ({ pageContext }) => {
                   src={project?.imgUrls[2]}
                   // Access the first image URL
                   alt={project?.title}
-                  className=" w-full h-full"
+                  className=" w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -109,6 +109,8 @@ const ProjectDetailPage = ({ pageContext }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full h-[50vh] md:h-[125vh] lg:h-[40vh] bg-[#101418] pt-6 pb-5  mt-16  md:mt-0 lg:mt-0">
           {/* Left Arrow and Text */}
+          <Link 
+          to={'/'}>
           <div className="rounded-3xl bg-[#181c20] p-4 flex items-center justify-start text-white w-full h-full font-leagueGothic text-[32px]">
             <svg
               className="mr-4"
@@ -128,6 +130,7 @@ const ProjectDetailPage = ({ pageContext }) => {
             </svg>
             BACK TO PROJECTS
           </div>
+          </Link>
 
           {nextTitle && (
             <Link

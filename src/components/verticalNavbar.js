@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import { Link } from "gatsby"
+import Logo from "../images/logo.png"
 
 function VerticalNavbar() {
   useEffect(() => {
@@ -21,10 +22,9 @@ function VerticalNavbar() {
       id="verticalNavbar"
       className="md:flex md:flex-col lg:flex lg:flex-col w-[23%] md:visible lg:visible hidden  bg-[#111418] min-h-screen flex-shrink-0"
     >
-      <aside className="flex-grow bg-[#181c20] rounded-3xl pt-12 pl-12 mt-6 ml-5">
-        <h1 className="font-leagueGothic mb-8 text-white text-[42px]">
-          PORTal
-        </h1>
+      <aside className="flex-grow bg-[#181c20] rounded-3xl pt-10 pl-10 mt-6 ml-5">
+      <img src={Logo} alt="PORTal" class="w-36  pt-5 text-white" />
+
         <nav className="w-full mt-10  ">
           <ul className=" w-full text-white list-none  flex flex-col ">
             <li className="">

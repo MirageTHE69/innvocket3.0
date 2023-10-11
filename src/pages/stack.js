@@ -13,6 +13,7 @@ import WebIcon from "../images/web.png"
 import MernICon from "../images/Mern.png"
 import Python from "../images/python.png"
 import Net from "../images/net.png"
+import Mean from "../images/mean.png"
 
 function Stack() {
   const Data = [
@@ -39,7 +40,7 @@ function Stack() {
     {
       title: "Mean Stack",
       subtitle: "Interface Design",
-      imageSrc: WebIcon, // Use the imported image here
+      imageSrc: Mean, // Use the imported image here
     },
 
     {
