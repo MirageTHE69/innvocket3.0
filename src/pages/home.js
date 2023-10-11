@@ -53,7 +53,7 @@ const HomePage = () => {
         </div>
 
         {/* Stack Cards */}
-        <div className="w-full md:w-1/2 space-y-3  ">
+        <div className="w-full md:w-1/2 space-y-3 mt-5  ">
           <div className="flex justify-between items-center justify-items-center">
             <h2 className="font-leagueGothic text-3xl md:ml-8 lg:ml-8 ml-2 text-white">
               STACK

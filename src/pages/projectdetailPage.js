@@ -33,12 +33,12 @@ const ProjectDetailPage = ({ pageContext }) => {
 
         <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2  md:grid-rows-3 lg:grid-rows-3 gap-5 w-full h-[350vh] md:h-[125vh] lg:h-[200vh] bg-[#101418] pt-6 pb-5 ">
           {/* Card 1 */}
-          <div className="rounded-3xl bg-[#181c20] p-4 text-white w-full h-full">
+          <div className="rounded-3xl bg-[#181c20] p-10 text-white w-full h-full">
             <div className=" h-full w-full flex flex-col">
               <span className=" font-leagueGothic text-[32px] text-white">
                 problem
               </span>
-              <div className="mt-10 text-white font-medium font-InterTight">
+              <div className="mt-10 text-white  font-medium font-InterTight">
                 <p>{project?.problem}</p>
               </div>
             </div>
@@ -59,9 +59,9 @@ const ProjectDetailPage = ({ pageContext }) => {
           </div>
 
           {/* Card 3 */}
-          <div className="rounded-3xl bg-[#181c20] p-4 text-white w-full h-full">
+          <div className="rounded-3xl bg-[#181c20] p-10 text-white w-full h-full">
             <div className=" h-full w-full flex flex-col">
-              <span className=" font-leagueGothic text-[32px] text-white">
+              <span className=" font-leagueGothic   text-[32px] text-white">
                 process
               </span>
               <div className="mt-10 text-white font-medium font-InterTight">
@@ -83,7 +83,7 @@ const ProjectDetailPage = ({ pageContext }) => {
             </div>
           </div>
 
-          <div className="rounded-3xl bg-[#181c20] p-4 text-white w-full h-full">
+          <div className="rounded-3xl bg-[#181c20] p-10 text-white w-full h-full">
             <div className=" h-full w-full flex flex-col">
               <span className=" font-leagueGothic text-[32px] text-white">
                 Result
@@ -107,7 +107,7 @@ const ProjectDetailPage = ({ pageContext }) => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full h-[50vh] md:h-[125vh] lg:h-[40vh] bg-[#101418] pt-6 pb-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full h-[50vh] md:h-[125vh] lg:h-[40vh] bg-[#101418] pt-6 pb-5 mt-10  md:mt-0 lg:mt-0">
           {/* Left Arrow and Text */}
           <div className="rounded-3xl bg-[#181c20] p-4 flex items-center justify-start text-white w-full h-full font-leagueGothic text-[32px]">
             <svg

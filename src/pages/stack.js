@@ -11,6 +11,8 @@ import FigmaIcon from "../images/figma.png"
 import AndroidIcon from "../images/android.png"
 import WebIcon from "../images/web.png"
 import MernICon from "../images/Mern.png"
+import Python from "../images/python.png"
+import Net from "../images/net.png"
 
 function Stack() {
   const Data = [
@@ -20,9 +22,9 @@ function Stack() {
       imageSrc: FigmaImage, // Use the imported image here
     },
     {
-      title: "Code",
-      subtitle: "Interface Design",
-      imageSrc: CodeIcon, // Use the imported image here
+      title: "Mern stack",
+      subtitle: "Mongodb,express,react js,node js ",
+      imageSrc: MernICon, // Use the imported image here
     },
     {
       title: "Android",
@@ -30,29 +32,25 @@ function Stack() {
       imageSrc: AndroidIcon, // Use the imported image here
     },
     {
-      title: "Web",
-      subtitle: "Interface Design",
+      title: "Website ",
+      subtitle: "Website development html,css,php",
       imageSrc: WebIcon, // Use the imported image here
     },
     {
-      title: "FIGMA",
+      title: "Mean Stack",
       subtitle: "Interface Design",
-      imageSrc: FigmaImage, // Use the imported image here
+      imageSrc: WebIcon, // Use the imported image here
+    },
+
+    {
+      title: "Python - Django",
+      subtitle: "Python Django Apache MySQL",
+      imageSrc: Python, // Use the imported image here
     },
     {
-      title: "Mern stack",
+      title: "Asp.Net",
       subtitle: "Interface Design",
-      imageSrc: MernICon, // Use the imported image here
-    },
-    {
-      title: "FIGMA",
-      subtitle: "Interface Design",
-      imageSrc: FigmaImage, // Use the imported image here
-    },
-    {
-      title: "FIGMA",
-      subtitle: "Interface Design",
-      imageSrc: FigmaImage, // Use the imported image here
+      imageSrc: Net, // Use the imported image here
     },
     // Add more experiences as needed
   ]
