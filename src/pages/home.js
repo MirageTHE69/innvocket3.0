@@ -137,7 +137,7 @@ const HomePage = () => {
           </Link>
         </div>
 
-        <div className="grid md:grid-cols-3 grid-cols-1 p-2 md:h-[45vh] lg:h-[45vh] h-[250vh] gap-4 mt-4">
+        <div className="grid md:grid-cols-3 grid-cols-1 p-2 md:h-[45vh] lg:h-[45vh] h-[150vh] gap-4 mt-4">
           <div className="w-full h-half rounded-3xl moon-pruple-gradient p-4 slide-in-right delay-8">
             <div className="w-[80%] h-[80%] absolute bottom-0 right-0 ">
               <img

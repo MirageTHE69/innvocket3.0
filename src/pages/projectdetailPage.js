@@ -44,6 +44,7 @@ const ProjectDetailPage = ({ pageContext }) => {
             </div>
           </div>
           {/* Card 2 */}
+
           <div className="rounded-3xl gradient-background p-4 text-white w-full h-full">
             <div className=" w-full h-[55vh] flex justify-center mt-3">
               <div className="">
@@ -51,11 +52,12 @@ const ProjectDetailPage = ({ pageContext }) => {
                   src={project?.imgUrls[2]}
                   // Access the first image URL
                   alt={project?.title}
-                  className=" "
+                  className=" w-full h-full"
                 />
               </div>
             </div>
           </div>
+
           {/* Card 3 */}
           <div className="rounded-3xl bg-[#181c20] p-4 text-white w-full h-full">
             <div className=" h-full w-full flex flex-col">
@@ -156,7 +158,6 @@ const ProjectDetailPage = ({ pageContext }) => {
           )}
         </div>
       </div>
-      
     </Layout>
   )
 }

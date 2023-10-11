@@ -90,7 +90,7 @@ const IndexPage = () => {
     <Layout>
       <div className="h-screen bg-[rgb(16,20,24)] font-leagueGothic lg:mt-0 md:mt-0 mt-28">
         <HeaderSection title="PROJECTS" subtext="Case study of latest work" />
-        <div className="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-4 w-full h-[400vh] md:h-[150vh] lg:h-[150vh] bg-[#101418] pt-2 pl-5 pr-5 pb-5">
+        <div className="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-4 w-full h-[250vh] md:h-[200vh] lg:h-[150vh] bg-[#101418] pt-2 pl-5 pr-5 pb-5">
           {projects.map((project, index) => (
             <div
               key={index}
