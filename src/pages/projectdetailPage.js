@@ -156,6 +156,7 @@ const ProjectDetailPage = ({ pageContext }) => {
           )}
         </div>
       </div>
+      
     </Layout>
   )
 }
