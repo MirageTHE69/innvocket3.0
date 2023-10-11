@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 const titleArray = ["hackavenger", "vidhya verse", "sigma"]
 
 const ProjectDetailPage = ({ pageContext }) => {
-  const { project } = pageContext
+  const project = pageContext.project
 
   const [currentIndex, setCurrentIndex] = useState(0)
   const currentTitle = titleArray[currentIndex]
