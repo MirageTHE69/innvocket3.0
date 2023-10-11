@@ -31,6 +31,22 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.custom-gradient2 {
+  background: #f953c6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b91d73,
+    #f953c6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b91d73,
+    #f953c6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
 body {
   overflow: hidden;
 }
@@ -224,7 +240,8 @@ html {
   align-items: center;
   padding: 1rem 2rem; /* shorthand for padding-top/bottom and padding-left/right */
   background-color: #181c20;
-  z-index: 1001; /* ensure the top bar stays above other elements */
+  z-index: 1001; 
+   ;/* ensure the top bar stays above other elements */
 }
 
 .mobile-navbar {

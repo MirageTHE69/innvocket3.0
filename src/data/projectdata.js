@@ -1,11 +1,4 @@
-// gatsby-node.js
-const path = require("path")
-
-exports.createPages = ({ actions }) => {
-  const { createPage } = actions
-
-  // Replace with your actual project data or fetch it from an API.
-  const projects = [
+const projects = [
     {
       title: "Hackvengers",
       stack: ["Mern stack", "UI/UX"],
@@ -82,19 +75,24 @@ exports.createPages = ({ actions }) => {
         "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696985625/Images/innvocket/Hackvengers_Web_Ui_kiwz2b.png",
       ],
     },
-  ]
 
-  projects.forEach((project, index) => {
-    createPage({
-      path: `/projectdetailpage/${project.title
-        .toLowerCase()
-        .replace(/\s/g, "-")}`,
-      component: path.resolve("./src/pages/projectdetailPage.js"),
-      context: {
-        project,
-        index, // Add the current project's index
-        totalProjects: projects.length, // Add the total number of projects
-      },
-    })
-  })
-}
+    {
+      title: "sigma",
+      brief:
+        "Design an intuitive, user-friendly, and informative UI for the Faculty of Engineering & Technology page on the Sigma University website.",
+      problem:
+        "Encapsulating a wide array of academic disciplines, facilities, and faculty achievements in a cohesive, easy-to-navigate, and visually engaging manner.",
+      process:
+        "Exhaustive analysis of user needs, developed wireframes and interactive prototypes, iteratively refining based on stakeholder feedback and usability testing.",
+      results:
+        "Effective communication of faculty’s diverse academic and facility offerings, enriched user experience, easy navigation, and positive stakeholder feedback.",
+      imgUrls: [
+        "https://example.com/sigma-image1.jpg",
+        "https://example.com/sigma-image2.jpg",
+        // ...more image URLs
+      ],
+      source:
+        "https://sigmauniversity.ac.in/faculty-of-engineering-technology/",
+    },
+    // Add more projects as needed
+  ]

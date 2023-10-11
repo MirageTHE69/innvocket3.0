@@ -3,6 +3,9 @@ import Layout from "../components/layout"
 import ContactCard from "../components/contactCard"
 import HeaderSection from "../components/HeaderSection"
 import StackCard from "../components/stackCard"
+import FacebookIcon from "../images/facebook.png"
+import InstagramIcon from "../images/instagram.png"
+import LinkdinIcon from "../images/linkdin.png"
 
 function Contact() {
   return (
@@ -45,7 +48,7 @@ function Contact() {
           </div>
         </div>
         {/* Stack Cards */}
-        <div className="w-full md:w-[40%] space-y-2 stack-section pt-1">
+        <div className="w-full md:w-[40%]  space-y-2 stack-section pt-8">
           <div className="flex justify-between items-center justify-items-center mb-4">
             <h2 className="font-leagueGothic text-3xl ml-3 text-white">
               SOCIALS
@@ -74,24 +77,19 @@ function Contact() {
           </div>
           <div className="flex flex-col gap-2">
             <StackCard
-              title="Stack Title 1"
-              icon={""}
+              title="Facebook"
+              icon={FacebookIcon}
               className="slide-in-right delay-1 "
             />
             <StackCard
-              title="Stack Title 2"
-              icon={""}
+              title="Linkedin"
+              icon={LinkdinIcon}
               className="slide-in-right delay-2 "
             />
             <StackCard
-              title="Stack Title 3"
-              icon={""}
+              title="Instagram"
+              icon={InstagramIcon}
               className="slide-in-right delay-3 "
-            />
-            <StackCard
-              title="Stack Title 4"
-              icon={""}
-              className="slide-in-right delay-4 "
             />
           </div>
         </div>

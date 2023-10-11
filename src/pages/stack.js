@@ -5,6 +5,12 @@ import Card from "../components/main/stacks"
 
 // Import your image here
 import FigmaImage from "../images/figma.png"
+import TeamIcon from "../images/team.png"
+import CodeIcon from "../images/code.png"
+import FigmaIcon from "../images/figma.png"
+import AndroidIcon from "../images/android.png"
+import WebIcon from "../images/web.png"
+import MernICon from "../images/Mern.png"
 
 function Stack() {
   const Data = [
@@ -14,9 +20,19 @@ function Stack() {
       imageSrc: FigmaImage, // Use the imported image here
     },
     {
-      title: "FIGMA",
+      title: "Code",
       subtitle: "Interface Design",
-      imageSrc: FigmaImage, // Use the imported image here
+      imageSrc: CodeIcon, // Use the imported image here
+    },
+    {
+      title: "Android",
+      subtitle: "Interface Design",
+      imageSrc: AndroidIcon, // Use the imported image here
+    },
+    {
+      title: "Web",
+      subtitle: "Interface Design",
+      imageSrc: WebIcon, // Use the imported image here
     },
     {
       title: "FIGMA",
@@ -24,19 +40,9 @@ function Stack() {
       imageSrc: FigmaImage, // Use the imported image here
     },
     {
-      title: "FIGMA",
+      title: "Mern stack",
       subtitle: "Interface Design",
-      imageSrc: FigmaImage, // Use the imported image here
-    },
-    {
-      title: "FIGMA",
-      subtitle: "Interface Design",
-      imageSrc: FigmaImage, // Use the imported image here
-    },
-    {
-      title: "FIGMA",
-      subtitle: "Interface Design",
-      imageSrc: FigmaImage, // Use the imported image here
+      imageSrc: MernICon, // Use the imported image here
     },
     {
       title: "FIGMA",
