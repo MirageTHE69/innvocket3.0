@@ -14,7 +14,7 @@ const ProjectDetailPage = ({ pageContext }) => {
   const nextTitle = titleArray[nextTitleIndex]
   return (
     <Layout>
-      <HeaderSection title={project.title} subtext={project.brief} />
+      <HeaderSection title={project?.title} subtext={project?.brief} />
 
       {/* Main Content */}
       <div className="w-full h-full pl-6 pr-6 ">
@@ -25,7 +25,7 @@ const ProjectDetailPage = ({ pageContext }) => {
                 DESIGNRSUPPLY
               </span>
               <div className="mt-10 text-white text-sm md:text-base font-medium font-InterTight">
-                <p>{project.brief}</p>
+                <p>{project?.brief}</p>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ const ProjectDetailPage = ({ pageContext }) => {
                 problem
               </span>
               <div className="mt-10 text-white font-medium font-InterTight">
-                <p>{project.problem}</p>
+                <p>{project?.problem}</p>
               </div>
             </div>
           </div>
@@ -48,9 +48,9 @@ const ProjectDetailPage = ({ pageContext }) => {
             <div className=" w-full h-[55vh] flex justify-center mt-3">
               <div className="">
                 <img
-                  src={project.imgUrls[2]}
+                  src={project?.imgUrls[2]}
                   // Access the first image URL
-                  alt={project.title}
+                  alt={project?.title}
                   className=" "
                 />
               </div>
@@ -63,7 +63,7 @@ const ProjectDetailPage = ({ pageContext }) => {
                 process
               </span>
               <div className="mt-10 text-white font-medium font-InterTight">
-                <p>{project.process}</p>
+                <p>{project?.process}</p>
               </div>
             </div>
           </div>
@@ -72,9 +72,9 @@ const ProjectDetailPage = ({ pageContext }) => {
             <div className=" w-full h-[55vh] flex justify-center mt-3">
               <div className="">
                 <img
-                  src={project.imgUrls[1]}
+                  src={project?.imgUrls[1]}
                   // Access the first image URL
-                  alt={project.title}
+                  alt={project?.title}
                   className=" w-full h-full"
                 />
               </div>
@@ -87,7 +87,7 @@ const ProjectDetailPage = ({ pageContext }) => {
                 Result
               </span>
               <div className="mt-10 text-white font-medium font-InterTight">
-                <p>{project.results}</p>
+                <p>{project?.results}</p>
               </div>
             </div>
           </div>
@@ -95,9 +95,9 @@ const ProjectDetailPage = ({ pageContext }) => {
             <div className=" w-full h-[55vh] flex justify-center mt-3">
               <div className="">
                 <img
-                  src={project.imgUrls[2]}
+                  src={project?.imgUrls[2]}
                   // Access the first image URL
-                  alt={project.title}
+                  alt={project?.title}
                   className=" w-full h-full"
                 />
               </div>
