@@ -45,8 +45,6 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
-
 body {
   overflow: hidden;
 }
@@ -240,8 +238,7 @@ html {
   align-items: center;
   padding: 1rem 2rem; /* shorthand for padding-top/bottom and padding-left/right */
   background-color: #181c20;
-  z-index: 1001; 
-   ;/* ensure the top bar stays above other elements */
+  z-index: 1001; /* ensure the top bar stays above other elements */
 }
 
 .mobile-navbar {
@@ -257,6 +254,8 @@ html {
   transform-origin: top; /* expand from the top */
   transition: transform 0.3s ease-in-out;
   z-index: 1000; /* beneath the top bar */
+  overflow-y: auto;
+
 }
 
 .mobile-navbar.open {

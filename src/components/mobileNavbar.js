@@ -5,7 +5,7 @@ function MobileNavbar() {
   const [isNavOpen, setNavOpen] = useState(false)
 
   return (
-    <div className="rounded-3xl md:pb-0 lg:pd-0 pb-28 ">
+    <div className="rounded-3xl md:pb-0 lg:pd-0  ">
       <div className="top-bar rounded-3xl  md:hidden lg:hidden bg-green flex justify-between items-center p-4 ">
         <h1 className="font-leagueGothic text-white text-[40px] ">PORTal</h1>
         <div

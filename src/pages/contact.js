@@ -11,8 +11,8 @@ function Contact() {
   return (
     <Layout>
       <HeaderSection
-        title="HOME"
-        subtext="Welcome to my personal website."
+        title="Contact"
+        subtext="contact us any time"
         className={"slide-in-right-bounce delay-2"}
       />
 
