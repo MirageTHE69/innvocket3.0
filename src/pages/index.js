@@ -116,9 +116,9 @@ const IndexPage = () => {
               className={`rounded-3xl  p-4 text-white w-full h-full slide-in-right delay-2 `+ project.background}
             >
               <Link
-                to={`/projectdetailpage/${project.title
-                  .toLowerCase()
-                  .replace(/\s/g, "-")}`}
+                to={`/projectdetailpage/${index
+            
+                }`}
               >
                 {/* Card content goes here */}
                 <div className=" w-[80%] h-[80%] absolute bottom-0 right-0  ">

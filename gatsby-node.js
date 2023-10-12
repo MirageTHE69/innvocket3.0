@@ -7,6 +7,7 @@ exports.createPages = ({ actions }) => {
   // Replace with your actual project data or fetch it from an API.
   const projects = [
     {
+     
       title: "Hackvengers",
       stack: ["Mern stack", "UI/UX"],
       brief:
@@ -27,6 +28,7 @@ exports.createPages = ({ actions }) => {
     },
 
     {
+   
       title: "Vidhya Verse",
       stack: ["MERN stack", "UI/UX"],
       brief:
@@ -47,43 +49,8 @@ exports.createPages = ({ actions }) => {
     },
     // Add more projects as needed
 
-    {
-      title: "Hackvengers",
-      stack: ["Mern stack", "UI/UX"],
-      brief:
-        "The objective was to orchestrate a college hackathon that would spur innovation and teamwork among students across diverse technological realms. Hackvengers aimed to provide a vibrant platform where students could exhibit their coding prowess, learn from peers, and work on real-world problems.",
-      problem:
-        "The primary challenge was to cater to a broad spectrum of participants - from seasoned coders to novices. It was imperative to ensure a conducive and competitive ambiance for all, fostering a rich learning and sharing experience.",
-      process:
-        "A significant part of the process entailed designing a user-friendly website to disseminate information, register teams, and highlight the different tech tracks. Coordinated efforts with college authorities, securing sponsorships, and overseeing the logistical arrangements were crucial steps to ensure the hackathon's smooth execution. Pre-event publicity, organizing workshops, and ensuring robust judging criteria were part of the meticulous planning.",
-      results:
-        "The hackathon saw enthusiastic participation across all tech tracks, leading to a plethora of innovative projects. The event received positive acclaim from participants, sponsors, and college authorities alike. The success of the hackathon not only showcased the burgeoning talent within the college but also fostered a culture of innovation and collaboration, aligning with the objectives set forth at the outset.",
-      imgUrls: [
-        "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884325/Images/innvocket/Hackvengers_Web_Ui_mqto7d.png",
-        "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884326/Images/innvocket/Hackvengers_Web_Ui-2_aqmedz.png",
-        "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884326/Images/innvocket/Hackvengers_Web_Ui-1_buu2eu.png",
-        "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696985625/Images/innvocket/Hackvengers_Web_Ui_kiwz2b.png",
-      ],
-    },
-
-    {
-      title: "Hackvengers",
-      stack: ["Mern stack", "UI/UX"],
-      brief:
-        "The objective was to orchestrate a college hackathon that would spur innovation and teamwork among students across diverse technological realms. Hackvengers aimed to provide a vibrant platform where students could exhibit their coding prowess, learn from peers, and work on real-world problems.",
-      problem:
-        "The primary challenge was to cater to a broad spectrum of participants - from seasoned coders to novices. It was imperative to ensure a conducive and competitive ambiance for all, fostering a rich learning and sharing experience.",
-      process:
-        "A significant part of the process entailed designing a user-friendly website to disseminate information, register teams, and highlight the different tech tracks. Coordinated efforts with college authorities, securing sponsorships, and overseeing the logistical arrangements were crucial steps to ensure the hackathon's smooth execution. Pre-event publicity, organizing workshops, and ensuring robust judging criteria were part of the meticulous planning.",
-      results:
-        "The hackathon saw enthusiastic participation across all tech tracks, leading to a plethora of innovative projects. The event received positive acclaim from participants, sponsors, and college authorities alike. The success of the hackathon not only showcased the burgeoning talent within the college but also fostered a culture of innovation and collaboration, aligning with the objectives set forth at the outset.",
-      imgUrls: [
-        "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884325/Images/innvocket/Hackvengers_Web_Ui_mqto7d.png",
-        "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884326/Images/innvocket/Hackvengers_Web_Ui-2_aqmedz.png",
-        "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884326/Images/innvocket/Hackvengers_Web_Ui-1_buu2eu.png",
-        "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696985625/Images/innvocket/Hackvengers_Web_Ui_kiwz2b.png",
-      ],
-    },
+    
+    
     {
       "title": "PU Connect",
       "stack": ["Mobile App Development", "Flutter", "MongoDB"],
@@ -99,15 +66,18 @@ exports.createPages = ({ actions }) => {
       ]
     }
   ]
+  console.log('createPages called'); 
   projects.forEach((project, index) => {
     createPage({
-      path: `/projectdetailpage/${project.title
-        .toLowerCase()
-        .replace(/\s/g, "-")}`,
+      path: `/projectdetailpage/${index}`,
       component: path.resolve("./src/pages/projectdetailPage.js"),
       context: {
-        project, // Pass the current project to the page
+        project,
+        index,
+        totalProjects: projects.length,
       },
-    })
-  })
+    });
+  });
+  console.log('createPages finished');  // Debugging log
+
 }

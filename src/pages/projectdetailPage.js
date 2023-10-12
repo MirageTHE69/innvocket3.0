@@ -6,12 +6,10 @@ import { Link } from "gatsby"
 const titleArray = ["hackavenger", "vidhya verse", "Pu Connect"]
 
 const ProjectDetailPage = ({ pageContext }) => {
-  const project = pageContext.project
+  const { project, index, totalProjects } = pageContext;  // Destructure totalProjects from pageContext
 
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const currentTitle = titleArray[currentIndex]
-  const nextTitleIndex = (currentIndex + 1) % titleArray.length
-  const nextTitle = titleArray[nextTitleIndex]
+  const nextIndex = (parseInt(index, 10) + 1) % totalProjects;
+  const nextTitle = titleArray[nextIndex]; 
   return (
     <Layout>
      <HeaderSection
@@ -139,9 +137,8 @@ const ProjectDetailPage = ({ pageContext }) => {
 
           {nextTitle && (
             <Link
-              to={`/projectdetailpage/${nextTitle
-                .toLowerCase()
-                .replace(/\s/g, "-")}`}
+              to={`/projectdetailpage/${nextIndex
+               }`}
             >
               <div className="rounded-3xl bg-[#181c20] p-4 flex items-center justify-end text-white w-full h-full font-leagueGothic text-[32px]">
                 NEXT PROJECT
@@ -170,4 +167,4 @@ const ProjectDetailPage = ({ pageContext }) => {
   )
 }
 
-export default ProjectDetailPage
+export default ProjectDetailPage  
