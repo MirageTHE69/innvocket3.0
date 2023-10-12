@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import HeaderSection from "../components/HeaderSection"
 import { Link } from "gatsby"
 
-const titleArray = ["hackavenger", "vidhya verse", "sigma"]
+const titleArray = ["hackavenger", "vidhya verse", "Pu connect"]
 
 const ProjectDetailPage = ({ pageContext }) => {
   const project = pageContext.project
@@ -14,14 +14,19 @@ const ProjectDetailPage = ({ pageContext }) => {
   const nextTitle = titleArray[nextTitleIndex]
   return (
     <Layout>
-      <HeaderSection title={project?.title} subtext={project?.brief} />
+     <HeaderSection
+  title={project?.title}
+  subtext={project?.stack.join(', ')}
+  
+/>
+
 
       {/* Main Content */}
       <div className="w-full h-full pl-6 pr-6 ">
         <div className="w-full h-[38%] rounded-3xl bg-[#181c20] p-6">
           <div className=" w-full h-full pt-5 pl-5">
             <div className=" h-full w-full flex flex-col">
-              <span className=" font-leagueGothic text-[32px] text-white">
+              <span className=" font-leagueGothic text-[32px] text-white capitalize">
                 DESIGNRSUPPLY
               </span>
               <div className="mt-10 text-white text-sm md:text-base font-medium font-InterTight">
@@ -35,8 +40,8 @@ const ProjectDetailPage = ({ pageContext }) => {
           {/* Card 1 */}
           <div className="rounded-3xl bg-[#181c20] p-10 text-white w-full h-full">
             <div className=" h-full w-full flex flex-col">
-              <span className=" font-leagueGothic text-[32px] text-white">
-                problem
+              <span className=" font-leagueGothic text-[32px] text-white capitalize">
+                PROBLEM
               </span>
               <div className="mt-10 text-white  font-medium font-InterTight">
                 <p>{project?.problem}</p>
@@ -62,7 +67,7 @@ const ProjectDetailPage = ({ pageContext }) => {
           <div className="rounded-3xl bg-[#181c20] p-10 text-white w-full h-full">
             <div className=" h-full w-full flex flex-col">
               <span className=" font-leagueGothic   text-[32px] text-white">
-                process
+                PROCESS
               </span>
               <div className="mt-10 text-white font-medium font-InterTight">
                 <p>{project?.process}</p>
@@ -86,7 +91,7 @@ const ProjectDetailPage = ({ pageContext }) => {
           <div className="rounded-3xl bg-[#181c20] p-10 text-white w-full h-full">
             <div className=" h-full w-full flex flex-col">
               <span className=" font-leagueGothic text-[32px] text-white">
-                Result
+                RESULT
               </span>
               <div className="mt-10 text-white font-medium font-InterTight">
                 <p>{project?.results}</p>

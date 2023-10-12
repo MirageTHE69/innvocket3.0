@@ -23,6 +23,7 @@ exports.createPages = ({ actions }) => {
         "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884326/Images/innvocket/Hackvengers_Web_Ui-1_buu2eu.png",
         "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696985625/Images/innvocket/Hackvengers_Web_Ui_kiwz2b.png",
       ],
+      background: 'custom-gradient2'
     },
 
     {
@@ -42,6 +43,7 @@ exports.createPages = ({ actions }) => {
         "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884323/Images/innvocket/Desktop_-_3_cjndda.png",
         "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884323/Images/innvocket/Desktop_-_3_cjndda.png",
       ],
+   
     },
     // Add more projects as needed
 
@@ -82,6 +84,20 @@ exports.createPages = ({ actions }) => {
         "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696985625/Images/innvocket/Hackvengers_Web_Ui_kiwz2b.png",
       ],
     },
+    {
+      "title": "PU Connect",
+      "stack": ["Mobile App Development", "Flutter", "MongoDB"],
+      "brief": "Establishing a platform for college students to network, share knowledge, and find job opportunities within a dedicated, student-centric environment.",
+      "problem": "Bridging the gap between students, potential employers, and a community of learners and professionals to foster career growth and academic collaboration.",
+      "process": "Designed a user-friendly app interface for seamless navigation. Incorporated job boards, a Q&A section, and chat functionality to foster communication and collaboration. Engaged with colleges and employers for job postings and community building.",
+      "results": "Achieved an active user base of students and professionals sharing knowledge, connecting for job opportunities, and creating a supportive community for academic and career advancement.",
+      "imgUrls": [
+        "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884320/Images/innvocket/iPhone_14_-_26_emxcbw.png",
+        "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884321/Images/innvocket/iPhone_14_-_29_fk6xml.png",
+        "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884321/Images/innvocket/iPhone_14_-_28_rphd2e.png",
+        "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696984020/Images/innvocket/iPhone_14_-_30_nou20n.png"
+      ]
+    }
   ]
   projects.forEach((project, index) => {
     createPage({
