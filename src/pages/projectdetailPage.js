@@ -110,10 +110,10 @@ const ProjectDetailPage = ({ pageContext }) => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full h-[50vh] md:h-[125vh] lg:h-[40vh] bg-[#101418] pt-6 pb-5  mt-16  md:mt-0 lg:mt-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full h-[50vh] md:h-[125vh] lg:h-[40vh] bg-[#101418] pt-6 pb-5  mt-56 md:mt-0 lg:mt-0">
           {/* Left Arrow and Text */}
           <Link 
-          to={'/'}>
+          to={'/projects'}>
           <div className="rounded-3xl bg-[#181c20] p-4 flex items-center justify-start text-white w-full h-full font-leagueGothic text-[32px]">
             <svg
               className="mr-4"

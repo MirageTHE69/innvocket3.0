@@ -1,142 +1,176 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import HeaderSection from "../components/HeaderSection"
-import Seo from "../components/seo"
+import StackCard from "../components/stackCard"
+import TeamIcon from "../images/team.png"
+import CodeIcon from "../images/code.png"
+import FigmaIcon from "../images/figma.png"
+import AndroidIcon from "../images/android.png"
+import WebIcon from "../images/web.png"
+import MernICon from "../images/Mern.png"
+import GlobalIcon from "../images/global.png"
+import WatchIcon from "../images/clock.png"
+import { Link } from "gatsby"
 
-const projects = [
-  {
-    title: "Hackvengers",
-    stack: ["Mern stack", "UI/UX"],
-    brief:
-      "The objective was to orchestrate a college hackathon that would spur innovation and teamwork among students across diverse technological realms. Hackvengers aimed to provide a vibrant platform where students could exhibit their coding prowess, learn from peers, and work on real-world problems.",
-    problem:
-      "The primary challenge was to cater to a broad spectrum of participants - from seasoned coders to novices. It was imperative to ensure a conducive and competitive ambiance for all, fostering a rich learning and sharing experience.",
-    process:
-      "A significant part of the process entailed designing a user-friendly website to disseminate information, register teams, and highlight the different tech tracks. Coordinated efforts with college authorities, securing sponsorships, and overseeing the logistical arrangements were crucial steps to ensure the hackathon's smooth execution. Pre-event publicity, organizing workshops, and ensuring robust judging criteria were part of the meticulous planning.",
-    results:
-      "The hackathon saw enthusiastic participation across all tech tracks, leading to a plethora of innovative projects. The event received positive acclaim from participants, sponsors, and college authorities alike. The success of the hackathon not only showcased the burgeoning talent within the college but also fostered a culture of innovation and collaboration, aligning with the objectives set forth at the outset.",
-    imgUrls: [
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884325/Images/innvocket/Hackvengers_Web_Ui_mqto7d.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884326/Images/innvocket/Hackvengers_Web_Ui-2_aqmedz.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884326/Images/innvocket/Hackvengers_Web_Ui-1_buu2eu.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696985625/Images/innvocket/Hackvengers_Web_Ui_kiwz2b.png",
-    ],
-    background: 'custom-gradient4  '
-  },
-
-  {
-    title: "Vidhya Verse",
-    stack: ["MERN stack", "UI/UX"],
-    brief:
-      "The client, Vidyaverse, needed a dynamic website that reflects their holistic approach to education. The goal was to create an engaging online platform that is easy to navigate while encapsulating the institution’s values and programs.",
-    problem:
-      "One of the major challenges was integrating a user-friendly interface that caters to both tech-savvy and non-tech-savvy visitors while ensuring the website remains responsive and visually appealing across various devices.",
-    process:
-      "Our process began with a thorough research and brainstorming sessions to understand the client’s needs. We then developed wireframes and prototypes, followed by developing the website using responsive design principles. Regular feedback sessions with the client ensured the website evolved to meet their expectations.",
-    results:
-      "The resulting website was well-received by the client and their community. It saw an increase in user engagement by 40% and helped streamline the institution's online presence, providing a cohesive platform for both prospective and current students to explore their programs",
-    imgUrls: [
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884324/Images/innvocket/Desktop_-_6_vdxwct.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884324/Images/innvocket/Desktop_-_7_hwaivk.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884323/Images/innvocket/Desktop_-_3_cjndda.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884323/Images/innvocket/Desktop_-_3_cjndda.png",
-    ],
-    background: 'custom-gradient3  '
-  },
-  // Add more projects as needed
-
-  {
-    title: "Hackvengers",
-    stack: ["Mern stack", "UI/UX"],
-    brief:
-      "The objective was to orchestrate a college hackathon that would spur innovation and teamwork among students across diverse technological realms. Hackvengers aimed to provide a vibrant platform where students could exhibit their coding prowess, learn from peers, and work on real-world problems.",
-    problem:
-      "The primary challenge was to cater to a broad spectrum of participants - from seasoned coders to novices. It was imperative to ensure a conducive and competitive ambiance for all, fostering a rich learning and sharing experience.",
-    process:
-      "A significant part of the process entailed designing a user-friendly website to disseminate information, register teams, and highlight the different tech tracks. Coordinated efforts with college authorities, securing sponsorships, and overseeing the logistical arrangements were crucial steps to ensure the hackathon's smooth execution. Pre-event publicity, organizing workshops, and ensuring robust judging criteria were part of the meticulous planning.",
-    results:
-      "The hackathon saw enthusiastic participation across all tech tracks, leading to a plethora of innovative projects. The event received positive acclaim from participants, sponsors, and college authorities alike. The success of the hackathon not only showcased the burgeoning talent within the college but also fostered a culture of innovation and collaboration, aligning with the objectives set forth at the outset.",
-    imgUrls: [
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884325/Images/innvocket/Hackvengers_Web_Ui_mqto7d.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884326/Images/innvocket/Hackvengers_Web_Ui-2_aqmedz.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884326/Images/innvocket/Hackvengers_Web_Ui-1_buu2eu.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696985625/Images/innvocket/Hackvengers_Web_Ui_kiwz2b.png",
-    ],
-    background: 'moon-pruple-gradient '
-  },
-
-  {
-    title: "Hackvengers",
-    stack: ["Mern stack", "UI/UX"],
-    brief:
-      "The objective was to orchestrate a college hackathon that would spur innovation and teamwork among students across diverse technological realms. Hackvengers aimed to provide a vibrant platform where students could exhibit their coding prowess, learn from peers, and work on real-world problems.",
-    problem:
-      "The primary challenge was to cater to a broad spectrum of participants - from seasoned coders to novices. It was imperative to ensure a conducive and competitive ambiance for all, fostering a rich learning and sharing experience.",
-    process:
-      "A significant part of the process entailed designing a user-friendly website to disseminate information, register teams, and highlight the different tech tracks. Coordinated efforts with college authorities, securing sponsorships, and overseeing the logistical arrangements were crucial steps to ensure the hackathon's smooth execution. Pre-event publicity, organizing workshops, and ensuring robust judging criteria were part of the meticulous planning.",
-    results:
-      "The hackathon saw enthusiastic participation across all tech tracks, leading to a plethora of innovative projects. The event received positive acclaim from participants, sponsors, and college authorities alike. The success of the hackathon not only showcased the burgeoning talent within the college but also fostered a culture of innovation and collaboration, aligning with the objectives set forth at the outset.",
-    imgUrls: [
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884325/Images/innvocket/Hackvengers_Web_Ui_mqto7d.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884326/Images/innvocket/Hackvengers_Web_Ui-2_aqmedz.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884326/Images/innvocket/Hackvengers_Web_Ui-1_buu2eu.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696985625/Images/innvocket/Hackvengers_Web_Ui_kiwz2b.png",
-    ],
-    background: 'custom-gradient2'
-  },
-  {
-    "title": "PU Connect",
-    "stack": ["Mobile App Development", "Flutter", "MongoDB"],
-    "brief": "Establishing a platform for college students to network, share knowledge, and find job opportunities within a dedicated, student-centric environment.",
-    "problem": "Bridging the gap between students, potential employers, and a community of learners and professionals to foster career growth and academic collaboration.",
-    "process": "Designed a user-friendly app interface for seamless navigation. Incorporated job boards, a Q&A section, and chat functionality to foster communication and collaboration. Engaged with colleges and employers for job postings and community building.",
-    "results": "Achieved an active user base of students and professionals sharing knowledge, connecting for job opportunities, and creating a supportive community for academic and career advancement.",
-    "imgUrls": [
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884320/Images/innvocket/iPhone_14_-_26_emxcbw.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884321/Images/innvocket/iPhone_14_-_29_fk6xml.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884321/Images/innvocket/iPhone_14_-_28_rphd2e.png",
-      "https://res.cloudinary.com/dxeb4jubk/image/upload/v1696984020/Images/innvocket/iPhone_14_-_30_nou20n.png"
-    ],
-    background: 'custom-gradient2'
-  }
-
-  // Add more projects as needed
-]
-
-const IndexPage = () => {
+const HomePage = () => {
   return (
     <Layout>
-      <div className="h-screen bg-[rgb(16,20,24)] font-leagueGothic lg:mt-0 md:mt-0 mt-28">
-        <HeaderSection title="PROJECTS" subtext="Case study of latest work" />
-        <div className="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-4 w-full h-[250vh] md:h-[200vh] lg:h-[150vh] bg-[#101418] pt-2 pl-5 pr-5 pb-5">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className={`rounded-3xl  p-4 text-white w-full h-full slide-in-right delay-2 `+ project.background}
-            >
-              <Link
-                to={`/projectdetailpage/${index
-            
-                }`}
-              >
-                {/* Card content goes here */}
-                <div className=" w-[80%] h-[80%] absolute bottom-0 right-0  ">
-                  <img
-                    src={project.imgUrls[project.imgUrls.length - 1]} // Add the appropriate image URL from your project data
-                    alt={project.title}
-                    className="w-full h-full rounded-tl-3xl object-cover"
-                  />
-                </div>
-              </Link>
+      <HeaderSection title="HOME" subtext="Welcome to my personal website." />
+
+      <div className="flex flex-col md:flex-row w-full p-10 space-y-3 mt-5">
+        <div className="w-full md:w-1/2 flex flex-col ">
+          <h2 className="font-leagueGothic text-3xl ml-3 text-white slide-in-right delay-1">
+            ABOUT
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5 ">
+            {/* 2x2 Grid for About */}
+
+            <div className="w-full h-[25vh] rounded-3xl bg-[#181c20]  slide-in-right delay-2 flex flex-col gap-12 p-5 md:p-4  ">
+              <img src={TeamIcon} alt="team icon " className=" w-8 h-8 " />
+              <span className=" text-base  text-slate-400 font-InterTight">
+                We team with full support fully dedicated{" "}
+              </span>
             </div>
-          ))}
+
+            <div className="w-full h-[25vh] rounded-3xl bg-[#181c20]  slide-in-right delay-2 flex flex-col gap-12  p-5 ">
+              <img src={CodeIcon} alt="team icon " className=" w-8 h-8 " />
+              <span className=" text-base  text-slate-400 font-InterTight">
+                we give solution of any type of stack
+              </span>
+            </div>
+            <div className="w-full h-[25vh] rounded-3xl bg-[#181c20]  slide-in-right delay-2 flex flex-col gap-12  p-5 ">
+              <img src={WatchIcon} alt="team icon " className=" w-8 h-8 " />
+              <span className=" text-base  text-slate-400 font-InterTight">
+                We are fully dedicated to support you 24/7 {" "}
+              </span>
+            </div>
+            <div className="w-full h-[25vh] rounded-3xl bg-[#181c20]  slide-in-right delay-2 flex flex-col gap-12  p-5 ">
+              <img src={GlobalIcon} alt="team icon " className=" w-8 h-8 " />
+              <span className=" text-base md:text-base lg:text-base  text-slate-400 font-InterTight">
+                We connected global and provide solution{" "}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Stack Cards */}
+        <div className="w-full md:w-1/2 space-y-3 mt-5  ">
+          <div className="flex justify-between items-center justify-items-center">
+            <h2 className="font-leagueGothic text-3xl md:ml-8 lg:ml-8 ml-2 text-white">
+              STACK
+            </h2>
+            <Link to="/stack">
+              <button className="flex items-center text-white">
+                <span className="transition-transform transform hover:translate-x-[-8px] text-[#bdc7d0] text-sm">
+                  View all
+                </span>
+                <svg
+                  className="ml-2 align-middle text-[#bdc7d0]"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 10H15M15 10L10 15M15 10L10 5"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </Link>
+          </div>
+          <div className=" p-2 md:pl-8 lg:pl-8 w-full h-full flex flex-col gap-6">
+            <StackCard
+              title="Figma "
+              className="slide-in-right delay-1"
+              icon={FigmaIcon}
+            />
+            <StackCard
+              title="Mobile Application Development"
+              icon={AndroidIcon}
+              className="slide-in-right delay-2"
+            />
+            <StackCard
+              title="Web Development"
+              icon={WebIcon}
+              className="slide-in-right delay-3"
+            />
+            <StackCard
+              title="Mern Stack Development"
+              icon={MernICon}
+              className="slide-in-right delay-4"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full p-6">
+        <div className="flex justify-between items-center justify-items-center slide-in-right delay-7">
+          <h2 className="font-leagueGothic text-3xl ml-3 text-white">
+            RECENT PROJECTS
+          </h2>
+          <Link to="/">
+            <button className="flex items-center text-white">
+              <span className="transition-transform transform hover:translate-x-[-8px] text-[#bdc7d0] text-sm">
+                View all
+              </span>
+              <svg
+                className="ml-2 align-middle text-[#bdc7d0]"
+                width="18"
+                height="18"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 10H15M15 10L10 15M15 10L10 5"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+          </Link>
+        </div>
+
+        <div className="grid md:grid-cols-3 grid-cols-1 p-2 md:h-[45vh] lg:h-[45vh] h-[150vh] gap-4 mt-4">
+          <div className="w-full h-half rounded-3xl moon-pruple-gradient p-4 slide-in-right delay-8">
+            <div className="w-[80%] h-[80%] absolute bottom-0 right-0 ">
+              <img
+                src="https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884323/Images/innvocket/Desktop_-_3_cjndda.png"
+                alt=""
+                className="w-full h-full rounded-tl-3xl"
+              />
+            </div>{" "}
+          </div>
+          <div className="w-full h-half rounded-3xl custom-gradient2  p-4 slide-in-right delay-9">
+            <div className="w-[80%] h-[80%] absolute bottom-0 right-0 ">
+              <img
+                src="https://res.cloudinary.com/dxeb4jubk/image/upload/v1696985625/Images/innvocket/Hackvengers_Web_Ui_kiwz2b.png"
+                alt=""
+                className="w-full h-full rounded-tl-3xl"
+              />
+            </div>{" "}
+          </div>
+          <div className="w-full h-half rounded-3xl gradient-background p-4 slide-in-right delay-10">
+            <div className="w-[80%] h-[80%] absolute bottom-0 right-0 ">
+              <img
+                src="https://res.cloudinary.com/dxeb4jubk/image/upload/v1696984020/Images/innvocket/iPhone_14_-_30_nou20n.png"
+                alt=""
+                className="w-full h-full rounded-tl-3xl"
+              />
+            </div>{" "}
+          </div>
         </div>
       </div>
     </Layout>
   )
 }
 
-export const Head = () => <Seo title="project" />
-
-export default IndexPage
+export default HomePage

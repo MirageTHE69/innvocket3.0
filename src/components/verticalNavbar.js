@@ -31,7 +31,7 @@ function VerticalNavbar() {
           <ul className=" w-full text-white list-none  flex flex-col ">
             <li className="">
               <Link
-                to="/home"
+                to="/"
                 className="text-[#96a0aa] no-underline font-leagueGothic text-[42px] nav-item"
               >
                 Home
@@ -39,7 +39,7 @@ function VerticalNavbar() {
             </li>
             <li className="">
               <Link
-                to="/"
+                to="/projects"
                 className="text-[#96a0aa] no-underline font-leagueGothic text-[42px] nav-item "
               >
                 Projects
