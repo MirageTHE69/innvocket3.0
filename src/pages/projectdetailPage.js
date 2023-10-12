@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import HeaderSection from "../components/HeaderSection"
 import { Link } from "gatsby"
 
-const titleArray = ["hackavenger", "vidhya verse", "Pu connect"]
+const titleArray = ["hackavenger", "vidhya verse", "Pu Connect"]
 
 const ProjectDetailPage = ({ pageContext }) => {
   const project = pageContext.project
