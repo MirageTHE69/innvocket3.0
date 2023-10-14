@@ -88,28 +88,28 @@ const HomePage = () => {
             </Link>
           </div>
           <div className=" p-2 md:pl-8 lg:pl-8 w-full h-full flex flex-col gap-6">
-            <Link to="/servicedetail/3">
+            <Link to="/serviceDetail/3">
               <StackCard
                 title="Ui/Ux "
                 className="slide-in-right delay-1"
                 icon={FigmaIcon}
               />
             </Link>
-            <Link to="/servicedetail/1">
+            <Link to="/serviceDetail/1">
               <StackCard
                 title="Mobile Application Development"
                 icon={AndroidIcon}
                 className="slide-in-right delay-2"
               />
             </Link>
-            <Link to="/servicedetail/0">
+            <Link to="/serviceDetail/0">
               <StackCard
                 title="Web Development"
                 icon={WebIcon}
                 className="slide-in-right delay-3"
               />
             </Link>
-            <Link to="/servicedetail/2">
+            <Link to="/serviceDetail/2">
               <StackCard
                 title="Software Development"
                 icon={MernICon}
