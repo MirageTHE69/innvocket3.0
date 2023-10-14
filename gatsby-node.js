@@ -143,7 +143,7 @@ exports.createPages = ({ actions }) => {
   // Create pages for services
   services.forEach((service, index) => {
     createPage({
-      path: `/servicedetail/${index}`,
+      path: `/serviceDetail/${index}`,
       component: path.resolve("./src/pages/serviceDetail.js"),
       context: {
         service, // Pass the service data as context to the ServiceDetail component
