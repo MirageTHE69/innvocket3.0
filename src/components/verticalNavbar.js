@@ -23,7 +23,7 @@ function VerticalNavbar() {
       className="md:flex md:flex-col lg:flex lg:flex-col w-[23%] md:visible lg:visible hidden  bg-[#111418] min-h-screen flex-shrink-0"
     >
       <aside className="flex-grow bg-[#181c20] rounded-3xl pt-10 pl-10 mt-6 ml-5">
-        <Link to="/home">
+        <Link to="/">
           <img src={Logo} alt="PORTal" class="w-36  pt-5 text-white" />
         </Link>
 

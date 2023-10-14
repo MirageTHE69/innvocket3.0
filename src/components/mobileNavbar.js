@@ -8,7 +8,9 @@ function MobileNavbar() {
   return (
     <div className="rounded-3xl md:pb-0 lg:pd-0  ">
       <div className="top-bar rounded-3xl  md:hidden lg:hidden bg-green flex justify-between items-center p-4 ">
-        <img src={Logo} alt="PORTal" class=" w-24 h-full   text-white" />
+        <Link to="/">
+          <img src={Logo} alt="PORTal" class=" w-24 h-full   text-white" />
+        </Link>
         <div
           className={`hamburger-icon ${isNavOpen ? "open" : ""}`}
           onClick={() => setNavOpen(!isNavOpen)}
