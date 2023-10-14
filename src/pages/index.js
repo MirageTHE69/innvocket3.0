@@ -40,26 +40,26 @@ const HomePage = () => {
             <div className="w-full h-[25vh] rounded-3xl bg-[#181c20]  slide-in-right delay-2 flex flex-col gap-12 p-5 md:p-4  ">
               <img src={TeamIcon} alt="team icon " className=" w-8 h-8 " />
               <span className=" text-base  text-slate-400 font-InterTight">
-                We team with full support fully dedicated{" "}
+                We are a dedicated team offering full support
               </span>
             </div>
 
             <div className="w-full h-[25vh] rounded-3xl bg-[#181c20]  slide-in-right delay-2 flex flex-col gap-12  p-5 ">
               <img src={CodeIcon} alt="team icon " className=" w-8 h-8 " />
               <span className=" text-base  text-slate-400 font-InterTight">
-                we give solution of any type of stack
+                providing solutions for various stacks
               </span>
             </div>
             <div className="w-full h-[25vh] rounded-3xl bg-[#181c20]  slide-in-right delay-2 flex flex-col gap-12  p-5 ">
               <img src={WatchIcon} alt="team icon " className=" w-8 h-8 " />
               <span className=" text-base  text-slate-400 font-InterTight">
-                We are fully dedicated to support you 24/7{" "}
+                We are committed to supporting you 24/7
               </span>
             </div>
             <div className="w-full h-[25vh] rounded-3xl bg-[#181c20]  slide-in-right delay-2 flex flex-col gap-12  p-5 ">
               <img src={GlobalIcon} alt="team icon " className=" w-8 h-8 " />
               <span className=" text-base md:text-base lg:text-base  text-slate-400 font-InterTight">
-                We connected global and provide solution{" "}
+                connecting globally to deliver solutions.
               </span>
             </div>
           </div>
