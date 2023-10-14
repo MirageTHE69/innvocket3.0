@@ -15,9 +15,12 @@ import { Link } from "gatsby"
 const HomePage = () => {
   return (
     <Layout>
-      <HeaderSection title="HOME" subtext="Welcome to my personal website." />
+      <HeaderSection
+        title="HOME"
+        subtext="Welcome to Innvoket wherewe rocket your thinking and service"
+      />
 
-      <div className="flex flex-col md:flex-row w-full p-10 space-y-3 mt-5">
+      <div className="flex flex-col md:flex-row w-full p-10 space-y-3 mt-1">
         <div className="w-full md:w-1/2 flex flex-col ">
           <h2 className="font-leagueGothic text-3xl ml-3 text-white slide-in-right delay-1">
             ABOUT
@@ -42,7 +45,7 @@ const HomePage = () => {
             <div className="w-full h-[25vh] rounded-3xl bg-[#181c20]  slide-in-right delay-2 flex flex-col gap-12  p-5 ">
               <img src={WatchIcon} alt="team icon " className=" w-8 h-8 " />
               <span className=" text-base  text-slate-400 font-InterTight">
-                We are fully dedicated to support you 24/7 {" "}
+                We are fully dedicated to support you 24/7{" "}
               </span>
             </div>
             <div className="w-full h-[25vh] rounded-3xl bg-[#181c20]  slide-in-right delay-2 flex flex-col gap-12  p-5 ">
@@ -58,7 +61,7 @@ const HomePage = () => {
         <div className="w-full md:w-1/2 space-y-3 mt-5  ">
           <div className="flex justify-between items-center justify-items-center">
             <h2 className="font-leagueGothic text-3xl md:ml-8 lg:ml-8 ml-2 text-white">
-              STACK
+              SERVICES
             </h2>
             <Link to="/stack">
               <button className="flex items-center text-white">
@@ -85,26 +88,34 @@ const HomePage = () => {
             </Link>
           </div>
           <div className=" p-2 md:pl-8 lg:pl-8 w-full h-full flex flex-col gap-6">
-            <StackCard
-              title="Figma "
-              className="slide-in-right delay-1"
-              icon={FigmaIcon}
-            />
-            <StackCard
-              title="Mobile Application Development"
-              icon={AndroidIcon}
-              className="slide-in-right delay-2"
-            />
-            <StackCard
-              title="Web Development"
-              icon={WebIcon}
-              className="slide-in-right delay-3"
-            />
-            <StackCard
-              title="Mern Stack Development"
-              icon={MernICon}
-              className="slide-in-right delay-4"
-            />
+            <Link to="/servicedetail/3">
+              <StackCard
+                title="Ui/Ux "
+                className="slide-in-right delay-1"
+                icon={FigmaIcon}
+              />
+            </Link>
+            <Link to="/servicedetail/1">
+              <StackCard
+                title="Mobile Application Development"
+                icon={AndroidIcon}
+                className="slide-in-right delay-2"
+              />
+            </Link>
+            <Link to="/servicedetail/0">
+              <StackCard
+                title="Web Development"
+                icon={WebIcon}
+                className="slide-in-right delay-3"
+              />
+            </Link>
+            <Link to="/servicedetail/2">
+              <StackCard
+                title="Software Development"
+                icon={MernICon}
+                className="slide-in-right delay-4"
+              />
+            </Link>
           </div>
         </div>
       </div>
@@ -114,7 +125,7 @@ const HomePage = () => {
           <h2 className="font-leagueGothic text-3xl ml-3 text-white">
             RECENT PROJECTS
           </h2>
-          <Link to="/">
+          <Link to="/projects">
             <button className="flex items-center text-white">
               <span className="transition-transform transform hover:translate-x-[-8px] text-[#bdc7d0] text-sm">
                 View all
@@ -141,31 +152,38 @@ const HomePage = () => {
 
         <div className="grid md:grid-cols-3 grid-cols-1 p-2 md:h-[45vh] lg:h-[45vh] h-[150vh] gap-4 mt-4">
           <div className="w-full h-half rounded-3xl moon-pruple-gradient p-4 slide-in-right delay-8">
-            <div className="w-[80%] h-[80%] absolute bottom-0 right-0 ">
-              <img
-                src="https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884323/Images/innvocket/Desktop_-_3_cjndda.png"
-                alt=""
-                className="w-full h-full rounded-tl-3xl"
-              />
-            </div>{" "}
+            <Link to="projectdetailpage/1">
+              <div className="w-[80%] h-[80%] absolute bottom-0 right-0 ">
+                <img
+                  src="https://res.cloudinary.com/dxeb4jubk/image/upload/v1696884323/Images/innvocket/Desktop_-_3_cjndda.png"
+                  alt=""
+                  className="w-full h-full rounded-tl-3xl"
+                />
+              </div>{" "}
+            </Link>
           </div>
+
           <div className="w-full h-half rounded-3xl custom-gradient2  p-4 slide-in-right delay-9">
-            <div className="w-[80%] h-[80%] absolute bottom-0 right-0 ">
-              <img
-                src="https://res.cloudinary.com/dxeb4jubk/image/upload/v1696985625/Images/innvocket/Hackvengers_Web_Ui_kiwz2b.png"
-                alt=""
-                className="w-full h-full rounded-tl-3xl"
-              />
-            </div>{" "}
+            <Link to="projectdetailpage/0">
+              <div className="w-[80%] h-[80%] absolute bottom-0 right-0 ">
+                <img
+                  src="https://res.cloudinary.com/dxeb4jubk/image/upload/v1696985625/Images/innvocket/Hackvengers_Web_Ui_kiwz2b.png"
+                  alt=""
+                  className="w-full h-full rounded-tl-3xl"
+                />
+              </div>{" "}
+            </Link>
           </div>
           <div className="w-full h-half rounded-3xl gradient-background p-4 slide-in-right delay-10">
-            <div className="w-[80%] h-[80%] absolute bottom-0 right-0 ">
-              <img
-                src="https://res.cloudinary.com/dxeb4jubk/image/upload/v1696984020/Images/innvocket/iPhone_14_-_30_nou20n.png"
-                alt=""
-                className="w-full h-full rounded-tl-3xl"
-              />
-            </div>{" "}
+            <Link to="projectdetailpage/2">
+              <div className="w-[80%] h-[80%] absolute bottom-0 right-0 ">
+                <img
+                  src="https://res.cloudinary.com/dxeb4jubk/image/upload/v1696984020/Images/innvocket/iPhone_14_-_30_nou20n.png"
+                  alt=""
+                  className="w-full h-full rounded-tl-3xl"
+                />
+              </div>{" "}
+            </Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
+import Logo from "../images/logo.png"
 
 function MobileNavbar() {
   const [isNavOpen, setNavOpen] = useState(false)
@@ -7,7 +8,7 @@ function MobileNavbar() {
   return (
     <div className="rounded-3xl md:pb-0 lg:pd-0  ">
       <div className="top-bar rounded-3xl  md:hidden lg:hidden bg-green flex justify-between items-center p-4 ">
-        <h1 className="font-leagueGothic text-white text-[40px] ">PORTal</h1>
+        <img src={Logo} alt="PORTal" class=" w-24 h-full   text-white" />
         <div
           className={`hamburger-icon ${isNavOpen ? "open" : ""}`}
           onClick={() => setNavOpen(!isNavOpen)}
@@ -24,7 +25,7 @@ function MobileNavbar() {
               {/* ... rest of your nav links */}
               <li className="mb-4">
                 <Link
-                  to="/home"
+                  to="/"
                   className="text-[#96a0aa] no-underline font-leagueGothic text-[42px] nav-item"
                 >
                   Home
@@ -32,7 +33,7 @@ function MobileNavbar() {
               </li>
               <li className="mb-4">
                 <Link
-                  to="/"
+                  to="/projects"
                   className="text-[#96a0aa] no-underline font-leagueGothic text-[42px] nav-item"
                 >
                   Projects
@@ -51,7 +52,7 @@ function MobileNavbar() {
                   to="/stack"
                   className="text-[#96a0aa] no-underline font-leagueGothic text-[42px] nav-item"
                 >
-                  Stack
+                  Services
                 </Link>
               </li>
               <li className="mb-4">

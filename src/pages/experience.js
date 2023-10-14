@@ -16,14 +16,13 @@ const ExperiencePage = () => {
           <div className="rounded-3xl bg-[#181c20] p-4 text-white w-full h-full ">
             <div className=" w-full h-full pt-5 pl-5">
               <div className=" w-full h-full flex flex-col">
-                <span className=" font-leagueGothic text-[50px]">
+                <span className=" font-leagueGothic text-[30px] md:text-[50px] lg:text-[50px]">
                   Vidhya Verse
                 </span>
                 <div className=" w-full h-full text-base p-4  flex flex-col gap-3 font-InterTight">
                   <div className="flex flex-row ">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
-                    
+                      <span>+</span>
                     </div>
                     <span>
                       Client: Vidhya Verse - A Web3 and blockchain study
@@ -32,7 +31,7 @@ const ExperiencePage = () => {
                   </div>
                   <div className="flex flex-row ">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
 
                     <span>
@@ -42,7 +41,7 @@ const ExperiencePage = () => {
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Goal: Create a secure, decentralized academic records
@@ -51,7 +50,7 @@ const ExperiencePage = () => {
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Process: Explored blockchain for education, collaborated
@@ -61,7 +60,7 @@ const ExperiencePage = () => {
 
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Results: Platform exceeded client expectations, validating
@@ -76,13 +75,13 @@ const ExperiencePage = () => {
           <div className="rounded-3xl bg-[#181c20] p-4 text-white w-full h-full">
             <div className=" w-full h-full pt-5 pl-5">
               <div className=" w-full h-full flex flex-col">
-                <span className=" font-leagueGothic text-[50px]">
+                <span className=" font-leagueGothic text-[30px] md:text-[50px] lg:text-[50px]">
                   Hackvengers
                 </span>
                 <div className="w-full h-full text-base p-2 flex flex-col gap-3 font-InterTight">
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Organize a college hackathon promoting innovation and
@@ -91,14 +90,14 @@ const ExperiencePage = () => {
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
 
                     <span>Conducted pre-event publicity and workshops.</span>
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Established fair judging criteria for project evaluation.
@@ -106,7 +105,7 @@ const ExperiencePage = () => {
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Enthusiastic participation across tech tracks, generating
@@ -116,7 +115,7 @@ const ExperiencePage = () => {
 
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Positive feedback from participants, sponsors, and college
@@ -126,7 +125,7 @@ const ExperiencePage = () => {
 
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
 
                     <span>
@@ -142,11 +141,13 @@ const ExperiencePage = () => {
           <div className="rounded-3xl bg-[#181c20] p-2 text-white w-full h-full">
             <div className=" w-full h-full pt-5 pl-5">
               <div className=" w-full h-full flex flex-col">
-                <span className=" font-leagueGothic text-[50px]">Puconnet</span>
+                <span className=" font-leagueGothic text-[30px] md:text-[50px] lg:text-[50px]">
+                  Puconnet
+                </span>
                 <div className="w-full h-full text-base p-5  flex flex-col gap-3 font-InterTight">
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Objective: Create an app for students to connect and boost
@@ -155,7 +156,7 @@ const ExperiencePage = () => {
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
 
                     <span>
@@ -164,7 +165,7 @@ const ExperiencePage = () => {
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Features: Profiles, chat, productivity tools, privacy
@@ -173,7 +174,7 @@ const ExperiencePage = () => {
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Development: Involved students for feedback and
@@ -183,7 +184,7 @@ const ExperiencePage = () => {
 
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Results: Improved student connections, productivity, and
@@ -192,7 +193,7 @@ const ExperiencePage = () => {
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Impact: Strengthened community and learning collaboration.
@@ -207,43 +208,45 @@ const ExperiencePage = () => {
           <div className="rounded-3xl bg-[#181c20] p-3 row-span-2 text-white w-full">
             <div className=" w-full h-full pt-5 pl-5">
               <div className=" w-full h-full flex flex-col">
-                <span className=" font-leagueGothic text-[50px]">Skills</span>
+                <span className=" font-leagueGothic text-[30px] md:text-[50px] lg:text-[50px] ">
+                  Skills
+                </span>
                 <div className=" w-full h-full text-base p-5  flex flex-col gap-3 font-InterTight">
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>Kotlin</span>
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
 
                     <span>Mern Stack</span>
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>Java</span>
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>React Js</span>
                   </div>
 
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>Unity</span>
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>Java Script</span>
                   </div>
@@ -262,7 +265,7 @@ const ExperiencePage = () => {
                 <div className=" w-full h-full text-base p-5  flex flex-col gap-3 font-InterTight">
                   <div className="flex flex-row gap-1">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Objective: Create a user-friendly website for Sigma
@@ -271,14 +274,14 @@ const ExperiencePage = () => {
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
 
                     <span>Challenge: Balance design and functionality.</span>
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Features: Easy navigation, course info, news, and
@@ -287,7 +290,7 @@ const ExperiencePage = () => {
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Development: Collaborated with university staff.
@@ -296,7 +299,7 @@ const ExperiencePage = () => {
 
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Results: Enhanced online presence, communication, and
@@ -305,7 +308,7 @@ const ExperiencePage = () => {
                   </div>
                   <div className="flex flex-row">
                     <div className=" flex items-center pr-2">
-                    <span>+</span>
+                      <span>+</span>
                     </div>
                     <span>
                       Impact: Improved community connection and information
