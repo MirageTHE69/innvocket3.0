@@ -17,7 +17,7 @@ const HomePage = () => {
     <Layout>
       <HeaderSection
         title="HOME"
-        subtext="Welcome to Innvoket wherewe rocket your thinking and service"
+        subtext="Welcome to Innvoket where we rocket your thinking and service"
       />
 
       <div className="flex flex-col md:flex-row w-full p-10 space-y-3 mt-1">
