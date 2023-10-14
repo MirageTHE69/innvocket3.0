@@ -11,6 +11,7 @@ import MernICon from "../images/Mern.png"
 import GlobalIcon from "../images/global.png"
 import WatchIcon from "../images/clock.png"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 const HomePage = () => {
   return (
@@ -19,6 +20,13 @@ const HomePage = () => {
         title="HOME"
         subtext="Welcome to Innvoket where we rocket your thinking and service"
       />
+
+      <Helmet>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+      </Helmet>
 
       <div className="flex flex-col md:flex-row w-full p-10 space-y-3 mt-1">
         <div className="w-full md:w-1/2 flex flex-col ">
