@@ -16,7 +16,7 @@ const ServiceDetail = ({ pageContext }) => {
 
       {/* Main Content */}
       <div className="w-full h-full pl-6 pr-6 ">
-        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2  md:grid-rows-1 lg:grid-rows-1 gap-5 w-full h-[350vh] md:h-[125vh] lg:h-[80vh] bg-[#101418] pt-6 pb-5 ">
+        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2  md:grid-rows-1 lg:grid-rows-1 gap-5 w-full h-[150vh] md:h-[125vh] lg:h-[80vh] bg-[#101418] pt-6 pb-5 ">
           {/* Card 1 */}
           <div className="rounded-3xl bg-[#181c20] p-10 text-white w-full h-full">
             <div className=" h-full w-full flex flex-col">
