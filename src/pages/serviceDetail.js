@@ -12,7 +12,7 @@ const ServiceDetail = ({ pageContext }) => {
 
   return (
     <Layout>
-      <HeaderSection title={service.title} subtext={service.service} />
+      <HeaderSection title={service?.title} subtext={service?.service} />
 
       {/* Main Content */}
       <div className="w-full h-full pl-6 pr-6 ">
@@ -24,7 +24,7 @@ const ServiceDetail = ({ pageContext }) => {
                 PROBLEM
               </span>
               <div className="mt-10 text-white  font-medium font-InterTight">
-                <p>{service.description}</p>
+                <p>{service?.description}</p>
               </div>
             </div>
           </div>
@@ -37,7 +37,7 @@ const ServiceDetail = ({ pageContext }) => {
                   Tech stack
                 </span>
                 <div className="mt-10 text-white  font-medium font-InterTight">
-                  <p>{service.techStack}</p>
+                  <p>{service?.techStack}</p>
                 </div>
               </div>
             </div>
